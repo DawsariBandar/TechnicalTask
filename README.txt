@@ -63,7 +63,7 @@ TCP Port : 1433
 
 ## Running the Docker container:
 
-1 - From your system or IDE terminal execute the following command: git clone https://github.com/your-repository/task-application.git
+1 - From your system or IDE terminal execute the following command: git clone https://github.com/DawsariBandar/TechnicalTask.git
 2 - Go to your IDE's terminal and execute these four commands:
 "mvn clean"
 "mvn package"
