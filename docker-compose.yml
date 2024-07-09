@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    image: my-task-app
+    build: .
+    ports:
+      - "9090:9090"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:sqlserver://host.docker.internal:1433;databaseName=taskdb;encrypt=true;trustServerCertificate=true;
+      SPRING_DATASOURCE_USERNAME: bandar
+      SPRING_DATASOURCE_PASSWORD: admin123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.SQLServerDialect
+      JWT_SECRET: adminkey
+      JWT_EXPIRATION: 3600000
+      SERVER_PORT: 9090
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "admin123"
+    ports:
+      - "1433:1433"
