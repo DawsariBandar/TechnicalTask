@@ -165,6 +165,9 @@ The /api/fetch-data endpoint has rate limiting implemented to prevent abuse. Eac
 The "Users" table has a one-to-many relation with the "Posts" table. Which is linked by the foreign key "userId" in "Posts" and primary key "id" in "Users"
 
 
+Note: If you have any questions please don't hesitate to contact me on my email Aldawsaribandar@outlook.com
+
+
 
 
 
