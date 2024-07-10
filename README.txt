@@ -160,6 +160,10 @@ The /api/fetch-data endpoint has rate limiting implemented to prevent abuse. Eac
 
 The "Users" table has a one-to-many relation with the "Posts" table. Which is linked by the foreign key "userId" in "Posts" and primary key "id" in "Users"
 
+## Docker
+
+I am currently working on dockerizing the application. In case I was able to do it in time I will include the dockerhub link here.
+
 
 Note: If you have any questions please don't hesitate to contact me on my email Aldawsaribandar@outlook.com
 
