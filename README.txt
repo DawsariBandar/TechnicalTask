@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a Dockerized RESTful API using Spring Boot that consumes an external REST API (JSONPlaceholder) to fetch data dynamically, stores it in a local database, and provides various endpoints for data retrieval and user authentication.
+This is a RESTful API using Spring Boot that consumes an external REST API (JSONPlaceholder) to fetch data dynamically, stores it in a local database, and provides various endpoints for data retrieval and user authentication.
 
 
 ## Prerequisites
@@ -10,9 +10,8 @@ This is a Dockerized RESTful API using Spring Boot that consumes an external RES
 - Download and install JDK 17 in your system or IDE (JDK 17 Coretto is the specific version)
 - Download and install SQL Server and SQL Server Management Studio (To create and run a database)
 - Download and install Git on your system or IDE (To clone the project)
-- Download and install maven on your system or IDE (to run mvn commands)
+- Download and install maven on your system or IDE (To load the pom.xml)
 - Download and install Postman (For API testing)
-- Download and install Docker (To run the container)
 
 
 ## Setup Instructions
@@ -62,16 +61,12 @@ TCP Port : 1433
 7 - Go to "Server Roles" tab and check all the boxes (just in case) then press OK.
 
 
-## Running the Docker container:
+## Running the Application:
 
 1 - From your system or IDE terminal execute the following command: git clone https://github.com/DawsariBandar/TechnicalTask.git
-2 - Go to your IDE's terminal and execute these four commands:
-"mvn clean"
-"mvn package"
-"docker build -t technical-task"
-"docker-compose up --build"
-3 - If the application ran successfully you will see a message similar to this: "Started TaskApplication in 3.92 seconds (process running for 4.212)"
-4 - If you are facing problems with running the application with Docker then you can run it directly using the TaskApplication main class instead. (Just make sure you choose JDK 17 Coretto from Project Structure)
+2 - Go to "Project Structure" in IDE and choose "JDK 17 Coretto".
+3 - Run the main class TaskApplication.
+4 - If the application ran successfully you will see a message similar to this: "Started TaskApplication in 3.92 seconds (process running for 4.212)"
 
 Note: if the application says that port 9090 is taken you have to do the following:
 1 - Run CMD
